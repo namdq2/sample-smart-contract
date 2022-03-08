@@ -530,7 +530,7 @@ export default function Home() {
                         <div className={styles.card}>
                             {error}{' '}
                             {transactionHash ? (
-                                <div className={styles.viewOnBlock}><a href={baseNetworkScanUrl + transactionHash}>View on block explorer</a></div>) : ""}
+                                <div className={styles.viewOnBlock}><a href={baseNetworkScanUrl + transactionHash} target="_blank" rel="noreferrer">View on block explorer</a></div>) : ""}
                         </div>
                     </div>
                 ) : <></>
