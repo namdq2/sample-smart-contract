@@ -1,15 +1,79 @@
 .container {
   padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main {
-  min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.reloadAccount {
+  margin-left: 0.5rem;
+  color: blueviolet;
+  border: 1px solid blueviolet;
+  border-radius: 0.3rem;
+  background: transparent;
+  padding: 0.1rem 0.3rem;
+}
+
+.reloadAccount:hover {
+  color: white;
+  background: blueviolet;
+}
+
+.header {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.buttonPrimary {
+  padding: 0.8rem 1.2rem;
+  border: 0;
+  background: #0070f3;
+  color: white;
+  border-radius: 0.3rem;
+}
+
+.buttonPrimary:hover {
+  background: green;
+}
+
+.buttonConnect {
+  padding: 1rem 2rem;
+  border: 1px solid #eaeaea;
+  background: #eaeaea;
+  color: black;
+  border-radius: 0.3rem;
+}
+
+.buttonConnect:hover {
+  border: 1px solid #0070f3;
+  background: #0070f3;
+  color: white;
+}
+
+.viewOnBlock {
+  margin-top: 1rem;
+  color: #0070f3;
 }
 
 .footer {
@@ -19,6 +83,9 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer a {
@@ -83,13 +150,6 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
 }
 
 .card h2 {
