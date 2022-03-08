@@ -462,10 +462,12 @@ export default function Home() {
     const login = async () => {
         setAddress(await getAccounts());
         setError(undefined);
+        setTransactionHash(undefined);
     }
 
     const deposit = async () => {
         setError(undefined);
+        setTransactionHash(undefined);
         const accounts = await getAccounts();
         if (address[0] === accounts[0]) {
             const web3 = new Web3(window.ethereum);
